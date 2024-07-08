@@ -5,7 +5,10 @@ export default defineEventHandler((_event) => {
 
   foo(counter)
 
-  return { hello: 'world' }
+  return {
+    hello: 'world',
+    counter,
+  }
 })
 
 function foo(_p: string) {
